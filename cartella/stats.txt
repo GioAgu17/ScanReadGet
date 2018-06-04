@@ -1,0 +1,3 @@
+0
+Number of words in file:  0
+Percentage of new words:  0

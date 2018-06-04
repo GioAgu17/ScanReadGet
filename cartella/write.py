@@ -4,6 +4,7 @@
 import os
 
 import var
+import stats
 
 def PrintIntro():
 	print( "\n\nScanReadGet Versione 1.0\n\nLettura del file\nText analysed:\n\n" )
@@ -12,7 +13,7 @@ def PrintIntro():
 
 
 def PrintBook():
-	var.WriteBook.write (var. book )
+	var.WriteBook.write (var.book )
 	var.WriteBook.write ( "\n" )
 
 
@@ -26,20 +27,20 @@ def PrintWords():
 			var.WriteWords.write ("La parola %s e' comparsa %u volta\n" % ( w, f ) ) #string formatting operator        
 
 def PrintPoints():
-	var.WritePoints.write( "\nNumber of blank spaces =  :  " + str( var.PointCounter[points.index(" ")] ))
-	var.WritePoints.write( "\nNumber of commas =  :  " + str( var.PointCounter[points.index(",")] ))
-	var.WritePoints.write( "\nNumber of semicolumns =  :  " + str( var.PointCounter[points.index(";")] ))
-	var.WritePoints.write( "\nNumber of columns =  :  " + str( var.PointCounter[points.index(":")] ))
-	var.WritePoints.write( "\nNumber apostrophes =  :  " + str( var.PointCounter[points.index("'")] ))
-	var.WritePoints.write( "\nNumber of dots =  :  " + str( var.PointCounter[points.index(".")] ))
-	var.WritePoints.write( "\nNumber of question marks =  :  " + str( var.PointCounter[points.index("?")] ))
-	var.WritePoints.write( "\nNumber of exclamations marks =  :  " + str( var.PointCounter[points.index("!")] ))
-	var.WritePoints.write( "\nNumber of greater then =  :  " + str( var.PointCounter[points.index(">")] ))
-	var.WritePoints.write( "\nNumber of lower then =  :  " + str( var.PointCounter[points.index("<")] ))
-	var.WritePoints.write( "\nNumber of minus signs =  :  " + str( var.PointCounter[points.index("-")] ))
-	var.WritePoints.write( "\nNumber of plus signs =  :  " + str( var.PointCounter[points.index("+")] ))
-	var.WritePoints.write( "\nNumber of stars =  :  " + str( var.PointCounter[points.index("*")] ))
-	var.WritePoints.write( "\nNumber of new lines =  :  " + str( var.PointCounter[points.index("\n")] ))
+	var.WritePoints.write( "\nNumber of blank spaces =  :  " + str( var.PointCounter[var.points.index(" ")] ))
+	var.WritePoints.write( "\nNumber of commas =  :  " + str( var.PointCounter[var.points.index(",")] ))
+	var.WritePoints.write( "\nNumber of semicolumns =  :  " + str( var.PointCounter[var.points.index(";")] ))
+	var.WritePoints.write( "\nNumber of columns =  :  " + str( var.PointCounter[var.points.index(":")] ))
+	var.WritePoints.write( "\nNumber apostrophes =  :  " + str( var.PointCounter[var.points.index("'")] ))
+	var.WritePoints.write( "\nNumber of dots =  :  " + str( var.PointCounter[var.points.index(".")] ))
+	var.WritePoints.write( "\nNumber of question marks =  :  " + str( var.PointCounter[var.points.index("?")] ))
+	var.WritePoints.write( "\nNumber of exclamations marks =  :  " + str( var.PointCounter[var.points.index("!")] ))
+	var.WritePoints.write( "\nNumber of greater then =  :  " + str( var.PointCounter[var.points.index(">")] ))
+	var.WritePoints.write( "\nNumber of lower then =  :  " + str( var.PointCounter[var.points.index("<")] ))
+	var.WritePoints.write( "\nNumber of minus signs =  :  " + str( var.PointCounter[var.points.index("-")] ))
+	var.WritePoints.write( "\nNumber of plus signs =  :  " + str( var.PointCounter[var.points.index("+")] ))
+	var.WritePoints.write( "\nNumber of stars =  :  " + str( var.PointCounter[var.points.index("*")] ))
+	var.WritePoints.write( "\nNumber of new lines =  :  " + str( var.PointCounter[var.points.index("\n")] ))
         
 
 def PrintStats():
@@ -47,7 +48,7 @@ def PrintStats():
 	var.WriteStats.write ( str( stats.TotalDifferentWords ) + '\n' )	#write accetta solo stringhe, str(num) trasforma un numero in stringa
 	
 	print ( "Number of words in file:  ", stats.TotalWords)
-	var.WriteStatss.write ( "Number of words in file:  " + str(stats.TotalWords) + '\n' )
+	var.WriteStats.write ( "Number of words in file:  " + str(stats.TotalWords) + '\n' )
 	
 	print( "Percentage of new words:  ", str(stats.PercentageNewWords), '\n' )
 	var.WriteStats.write ( "Percentage of new words:  " + str(stats.PercentageNewWords) + '\n' )

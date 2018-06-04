@@ -1,0 +1,15 @@
+
+Number of blank spaces =  :  0
+Number of commas =  :  0
+Number of semicolumns =  :  0
+Number of columns =  :  0
+Number apostrophes =  :  0
+Number of dots =  :  0
+Number of question marks =  :  0
+Number of exclamations marks =  :  0
+Number of greater then =  :  0
+Number of lower then =  :  0
+Number of minus signs =  :  0
+Number of plus signs =  :  0
+Number of stars =  :  0
+Number of new lines =  :  0

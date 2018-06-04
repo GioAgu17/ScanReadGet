@@ -13,8 +13,8 @@ count =[]
 word_number = 0 #conta il totale delle parole
 
 #Read
-ReadBook = open("../prova.txt", "r")
-ReadChar = open("../prova.txt", "r")
+#ReadBook = open("prova.txt", "r")
+ReadChar = open("prova.dat", "r")
 
 #Write
 WriteBook = open("book.txt", "w")

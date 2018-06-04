@@ -5,46 +5,46 @@ import os
 
 import var
 
-def GetPoints(new_c):
+def GetPoints(c):
 	
-	if new_c == " ":
+	if c == " ":
 		var.PointCounter[var.points.index(" ")] += 1
-	if new_c == ",":
+	if c == ",":
 		var.PointCounter[var.points.index(",")] += 1
-	if new_c == ";":
+	if c == ";":
 		var.PointCounter[var.points.index(";")] += 1
-	if new_c == ":":
+	if c == ":":
 		var.PointCounter[var.points.index(":")] += 1
-	if new_c == "'":
+	if c == "'":
 		var.PointCounter[var.points.index("'")] += 1
-	if new_c == ".":
+	if c == ".":
 		var.PointCounter[var.points.index(".")] += 1
-	if new_c == "?":
+	if c == "?":
 		var.PointCounter[var.points.index("?")] += 1
-	if new_c == "!":
+	if c == "!":
 		var.PointCounter[var.points.index("!")] += 1
-	if new_c == ">":
+	if c == ">":
 		var.PointCounter[var.points.index(">")] += 1
-	if new_c == "<":
+	if c == "<":
 		var.PointCounter[var.points.index("<")] += 1
-	if new_c == "-":
+	if c == "-":
 		var.PointCounter[var.points.index("-")] += 1
-	if new_c == "+":
+	if c == "+":
 		var.PointCounter[var.points.index("+")] += 1
-	if new_c == "*":
+	if c == "*":
 		var.PointCounter[var.points.index("*")] += 1
-	if new_c == "\n":
+	if c == "\n":
 		var.PointCounter[var.points.index("\n")] += 1
 
 
 def GetWords():		#Potrebbe diventare il main, lo riempio di cicli e condizioni per la lettura di Paragrafi, Frasi, Parole, Punteggiatura, Categorie grammaticali
 	new_c = var.ReadChar.read(1)	#In tal caso chiamerebbe le funzioni get frasi dal file
 	while new_c != "" :		#Anzichè leggerlo carattere per carattere puoi salvare il libro come stringone e scorrere la stringa
-
 		if new_c not in var.points :
 			word = var.word + new_c
+			print(word)
 		else :
-			SortPoints( new_c )
+			#SortPoints( new_c )
 			var.word = word.lower()
 			var.word_number += 1
         
@@ -55,13 +55,13 @@ def GetWords():		#Potrebbe diventare il main, lo riempio di cicli e condizioni p
 				var.count[var.words.index(var.word)] += 1
 			var.word = new_c
 			while new_c in var.points :
-				new_c = var.ReadBook.read(1)
+				new_c = var.ReadChar.read(1)
 				var.word = new_c
-			new_c = var.ReadBook.read(1)
+		new_c = var.ReadChar.read(1)
 
 
 def CloseInput():
-	var.ReadBook.close()
+	var.ReadChar.close()
 
 
 
