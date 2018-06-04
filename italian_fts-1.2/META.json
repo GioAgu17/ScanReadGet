@@ -1,0 +1,24 @@
+{
+   "name": "italian_fts",
+   "abstract": "Italian full-text search dictionary",
+   "description": "An ISpell dictionary and configuration to perform high quality full-text search in Italian documents, keeping into account the morphological variations of Italian words, such as verb conjugations.",
+   "version": "1.2",
+   "maintainer": "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+   "tags": [ "full-text search", "Italian", "dictionary", "ISpell" ],
+   "license": "gpl_2",
+   "prereqs": {
+      "runtime": {
+         "requires": {
+            "PostgreSQL": "8.3.0"
+         }
+      }
+   },
+   "resources": {
+      "homepage": "http://www.develer.com/~piro/ispell-italian/"
+   },
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   }
+}
+
